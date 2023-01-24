@@ -1,7 +1,7 @@
 from pages.base_page import BasePage
 from selenium.webdriver.common.keys import Keys
 from time import sleep
-from config.config import  Create_Init_Page,Main_Page_Data
+from config.config import  Create_Init_Page,Main_Page_Data,Ideation_Data
 import dotenv
 from dotenv import load_dotenv
 import os
@@ -54,7 +54,7 @@ class Check_Create_Init(BasePage):
         self.click(Main_Page_Data.login_btn)
         self.click(Main_Page_Data.new_initiative_btn)
         self.click(Main_Page_Data.create_new_custom_initiative)
-        self.send_keys(Create_Init_Page.initiative_description,"test2")
+        self.send_keys(Create_Init_Page.initiative_title,"TC_2")
         self.click(Create_Init_Page.pick_a_goal_drop)
         self.click(Create_Init_Page.pick_a_goal_first_option)
         self.click(Create_Init_Page.select_owner_field)
@@ -62,8 +62,10 @@ class Check_Create_Init(BasePage):
         self.click(Create_Init_Page.select_contributor)
         self.click(Create_Init_Page.select_contributor_first_option)
         self.click(Create_Init_Page.create_btn)
-        validation_error = self.find_text(Create_Init_Page.initiative_description_valid_error)
+        validation_error = self.find_text(Ideation_Data.validation_error_desc)
         assert validation_error == 'Description is required', 'Wrong validation error'
+
+    
 
         
         

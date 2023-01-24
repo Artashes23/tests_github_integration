@@ -22,9 +22,13 @@ class Main_Page_Data():
     login_btn = (By.XPATH,"//button[@type = 'submit']")
     home_btn = (By.XPATH,"//div[@class = 'initiative-bar-container-title' and text() = 'Home']")
     for_tc_4 = (By.XPATH,"//div[text() = 'TC_4']")
+    for_tc_6 = (By.XPATH,"//div[text() = 'TC_6']")
     switch_completed_category_btn = (By.XPATH,"//span[text() = 'Completed']")
     switch_closed_category_btn = (By.XPATH,"//span[text() = 'Closed']")
-    
+    for_gmail_login = (By.XPATH,"r'https://accounts.google.com/signin/v2/identifier?continue='+\
+    'https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1'+\
+    '&flowName=GlifWebSignIn&flowEntry = ServiceLogin'")
+    body = (By.XPATH,'//body')
     
     
 
@@ -53,13 +57,46 @@ class Inside_Initiative_Page():
     lane_update_active = (By.XPATH,"//span[text() = 'Active']")
     lane_update_completed = (By.XPATH,"//span[text() = 'Completed']")
     lane_update_closed = (By.XPATH,"//span[text() = 'Closed']")
+    ideation_category = (By.XPATH,"//span[text() = 'Ideation']")
+    new_ideation_btn = (By.XPATH,"//button[@id = 'create-ideation']")
 
 class Settings_Page():
     settings_category_btn = (By.XPATH,"//div[@class = 'initiative-bar-container-title' and text() = 'Settings']")
     goals_category = (By.XPATH,"//span[text() = 'Goals']")
     goals_name_field = (By.XPATH,"//input[@class = 'qp-textInput ']")
     goals_plus_btn = (By.XPATH,"//div[@class = 'goals-page--header-operation']")
-    
+
+class Ideation_Data():
+    ideation_title_field = (By.XPATH,"//input[@placeholder='Enter a title for your Ideation']")
+    ideation_introduction_field = (By.XPATH,"//textarea[@placeholder = 'Enter a introduction for your Ideation']")
+    browser_logo = (By.XPATH,"//div[@class = 'file-uploader']")
+    crowdsource_switch = (By.XPATH,"//label[@for = 'Crowdsource request']/div")
+    promoted_idea_switch = (By.XPATH,"//label[@for = 'Promoted ideas']/div")
+    comments_switch = (By.XPATH,"//label[@for = 'Comments']/div")
+    draft_publish_drop = (By.XPATH,"//span[text() = 'Draft']/parent::div")
+    publish_option = (By.XPATH,"//div[text() = 'Publish']")
+    ideas_1 = (By.XPATH,"//input[@placeholder = 'Idea 1']")
+    ideas_2 = (By.XPATH,"//input[@placeholder = 'Idea 2']")
+    ideas_3 = (By.XPATH,"//input[@placeholder = 'Idea 3']")
+    first_idea_plus_btn = (By.XPATH,"//input[@placeholder = 'Idea 1']/parent::div/button[1]")
+    second_idea_btn = (By.XPATH,"//input[@placeholder = 'Idea 2']/parent::div/button[1]")
+    see_live_btn = (By.XPATH,"//span[@id = 'see-live']")
+    start_page_intro = (By.XPATH,"//p[@class = 'start-page--sub-title']")
+    ideation_start_btn = (By.XPATH,"//button[@class = 'qp-button start-page--start-btn']")
+    logo_existence = (By.XPATH,"//img")
+    add_your_idea_field = (By.XPATH,"//textarea[@placeholder = 'Add your idea here.']")
+    submit_btn = (By.XPATH,"//button[@class = 'qp-button idea-page--question--btn']")
+    idea1_existence = (By.XPATH,"//div[@class = 'ideas-vote-page--voted-ideas-block']/div[1]/p")
+    idea2_existence = (By.XPATH,"//div[@class = 'ideas-vote-page--voted-ideas-block']/div[2]/p")
+    idea3_existence = (By.XPATH,"//div[@class = 'ideas-vote-page--voted-ideas-block']/div[3]/p")
+    select_first_idea = (By.XPATH,"//div[@class = 'ideas-vote-page--left-block']/div[1]/div[1]")
+    select_second_idea = (By.XPATH,"//div[@class = 'ideas-vote-page--left-block']/div[2]/div[1]")
+    select_third_idea = (By.XPATH,"//div[@class = 'ideas-vote-page--left-block']/div[3]/div[1]")
+    ideation_submit_btn = (By.XPATH,"//button[@class = 'qp-button ']")
+    thank_you = (By.XPATH,"//p[@class = 'end-page--sub-sub-title']")
+    logo_input = (By.XPATH,"//input[@name = 'file']")
+    validation_error_desc = (By.XPATH,"//label[@class = 'error-label']")
+
 
 
     

@@ -20,3 +20,5 @@ class check_settings_page(BasePage):
         matched_elements = self.find_multiple_elements(Create_Init_Page.pick_a_goal_all_options)
         a = [i.text for i in matched_elements]
         assert 'TC_5' in a, 'bug'
+
+    

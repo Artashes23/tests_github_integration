@@ -3,9 +3,18 @@ import dotenv
 from dotenv import load_dotenv
 import os
 from simple_settings import settings
+import pytest
+
+
 
 class Test_Create_Delete_Init(Check_Create_Init):
+
+    @pytest.fixture(scope="session")
+    def name(pytestconfig):
+        return pytestconfig.getoption("name")
     load_dotenv()
+
+    
     def test_create_delete_init(self,setup):
         self.browser = setup
         self.browser.get(os.getenv('Prod_Url'))
@@ -20,6 +29,11 @@ class Test_Create_Delete_Init(Check_Create_Init):
         self.browser = setup
         self.browser.get(os.getenv('PROD_URL'))
         self.check_create_init_without_description()
+
+    
+
+    
+        
     
     
     
