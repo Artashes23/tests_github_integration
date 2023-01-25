@@ -10,3 +10,7 @@ class Test_Settings(check_settings_page):
         self.check_settings_add_delete_goal()
 
     
+        
+
+
+    
