@@ -1,4 +1,4 @@
-from pages.create_ideation import Check_Ideations
+from .pages.create_ideation import Check_Ideations
 from dotenv import load_dotenv
 import os
 
