@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 import os
 import sys
 
-sys.path.append("../")
+sys.path.append("D:\a\tests_github_integration\tests_github_integration\tests\test_ideation.py")
 
 
 class Test_Ideations(Check_Ideations):
