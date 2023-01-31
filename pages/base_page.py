@@ -1,10 +1,7 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
-from selenium.webdriver.common.action_chains import ActionChains
-import requests
-from seleniumwire.utils import decode as sw_decode
-import json
+
 class BasePage():
 
     def find_text_multiple(self,by_locator):
@@ -77,33 +74,10 @@ class BasePage():
     def get_current_url(self):
         return self.browser.current_url
 
-    def find_session_storage_token(self):
-        a = ''
-        count = 0
-        while len(a) == 0:
-            count += 1
-            token = self.browser.execute_script('return window.sessionStorage.getItem("token")')
-            sleep(0.5)
-            if token is not None:
-                a = a + token
-            if count == 10:
-                return 'Token is not found within 5 seconds'
-        return a
+   
 
-    def hover(self,elem_to_hover):
-           elem = WebDriverWait(self.browser,25).until(EC.presence_of_element_located(elem_to_hover))
-           hover =  ActionChains(self.browser).move_to_element(elem)
-           hover.perform()
 
-    def find_last_visited_id(self):
-        l = 0
-        for request in self.browser.requests:
-            if request.url == "https://outerloop.frescopad.com/api/v1/oauth/users/me":
-                data = sw_decode(request.response.body, request.response.headers.get('Content-Encoding', 'identity'))
-                data = data.decode("utf8")
-                last_vis = json.loads(data)
-                l = l + int(last_vis['data']['lastVisitedFeedbackID'])
-        return l
+    
     
     def checkbox_is_selected(self,by_locator):
         elem = WebDriverWait(self.browser,25).until(EC.presence_of_element_located(by_locator))
