@@ -1,6 +1,9 @@
 from .pages.create_ideation import Check_Ideations
 from dotenv import load_dotenv
 import os
+import sys
+
+sys.path.append("../")
 
 
 class Test_Ideations(Check_Ideations):
