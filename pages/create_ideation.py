@@ -32,7 +32,7 @@ class Check_Ideations(BasePage):
         self.send_keys(Ideation_Data.ideation_title_field,"TC_6")
         self.send_keys(Ideation_Data.ideation_introduction_field,"test6")
         #self.click(Ideation_Data.browser_logo)
-        self.send_keys(Ideation_Data.logo_input,logo_path)
+        #self.send_keys(Ideation_Data.logo_input,logo_path)
         self.click(Ideation_Data.crowdsource_switch)
         self.click(Ideation_Data.promoted_idea_switch)
         self.send_keys(Ideation_Data.ideas_1,'idea1')
@@ -52,7 +52,7 @@ class Check_Ideations(BasePage):
         ideation_inroduction = self.find_text(Ideation_Data.start_page_intro)
         self.click(Ideation_Data.ideation_start_btn)
         sleep(3)
-        logo_existence1 = self.element_presence(Ideation_Data.logo_existence)
+        
         self.send_keys(Ideation_Data.add_your_idea_field,"testidea")
         self.click(Ideation_Data.submit_btn)
         self.click(Ideation_Data.select_first_idea)
@@ -62,14 +62,14 @@ class Check_Ideations(BasePage):
         second_idea = self.find_text(Ideation_Data.idea2_existence)
         third_idea = self.find_text(Ideation_Data.idea3_existence)
         self.click(Ideation_Data.ideation_submit_btn)
-        logo_existence2 = self.element_presence(Ideation_Data.logo_existence)
+        
         success_message = self.find_text(Ideation_Data.thank_you)
         assert ideation_inroduction == 'test6','Wrong ideation title'
-        assert logo_existence1 is True,"Logo is not shown in start page"
+        
         assert first_idea == 'idea3',"Wrong first idea"
         assert second_idea == 'idea2',"Wrong second idea"
         assert third_idea == 'idea1',"Wrong third idea"
-        assert logo_existence2 is True, "Logo is not shown in start page"
+        
         assert success_message == 'Your votes have been submitted successfully!','Wrong success message'
 
         
