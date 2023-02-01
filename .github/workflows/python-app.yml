@@ -27,4 +27,4 @@ echo "rootdir: $(pwd)"
 
 - name: Run tests
 run: |
-pytest -v
+    pytest -v
