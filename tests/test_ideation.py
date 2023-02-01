@@ -5,7 +5,6 @@ import os
 
 
 class Test_Ideations(Check_Ideations):
-    load_dotenv
     def test_create_delete_ideations(self,setup):
         self.browser = setup
         self.browser.get(os.getenv('Prod_Url'))
