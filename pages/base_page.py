@@ -73,6 +73,11 @@ class BasePage():
 
     def get_current_url(self):
         return self.browser.current_url
+    
+    def hover(self,elem_to_hover):
+           elem = WebDriverWait(self.browser,25).until(EC.presence_of_element_located(elem_to_hover))
+           hover =  ActionChains(self.browser).move_to_element(elem)
+           hover.perform()
 
    
 
