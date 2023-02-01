@@ -1,9 +1,8 @@
 from ..pages.base_page import BasePage
 from selenium.webdriver.common.keys import Keys
 from time import sleep
-from config.config import  Create_Init_Page,Main_Page_Data,Ideation_Data
-import dotenv
-from dotenv import load_dotenv
+from ..config.config import  Create_Init_Page,Main_Page_Data,Ideation_Data
+
 import os
 class Check_Create_Init(BasePage):
     load_dotenv()
