@@ -3,7 +3,7 @@ import os
 
 
 class Test_Lanes(check_initiative_lanes):
-    load_dotenv()
+    
     def test_check_status_updates(self,setup):
         self.browser = setup
         self.browser.get(os.getenv('PROD_URL'))
