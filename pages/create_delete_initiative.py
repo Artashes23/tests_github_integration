@@ -1,4 +1,4 @@
-from pages.base_page import BasePage
+from ..pages.base_page import BasePage
 from selenium.webdriver.common.keys import Keys
 from time import sleep
 from config.config import  Create_Init_Page,Main_Page_Data,Ideation_Data
