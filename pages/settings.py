@@ -1,6 +1,6 @@
-from pages.base_page import BasePage
-from config.config import Settings_Page,Main_Page_Data,Create_Init_Page
-from dotenv import load_dotenv
+from ..pages.base_page import BasePage
+from ..config.config import Settings_Page,Main_Page_Data,Create_Init_Page
+
 import os
 class check_settings_page(BasePage):
     load_dotenv()
