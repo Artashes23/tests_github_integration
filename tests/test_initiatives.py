@@ -6,10 +6,7 @@ import pytest
 
 class Test_Create_Delete_Init(Check_Create_Init):
 
-    @pytest.fixture(scope="session")
-    def name(pytestconfig):
-        return pytestconfig.getoption("name")
-    load_dotenv()
+   
 
     
     def test_create_delete_init(self,setup):
