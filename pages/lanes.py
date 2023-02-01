@@ -3,7 +3,7 @@ from ..config.config import Create_Init_Page,Main_Page_Data,Inside_Initiative_Pa
 import os
 
 class check_initiative_lanes(BasePage):
-    load_dotenv()
+    
     def check_lane_updates(self):
         self.send_keys(Main_Page_Data.email_field,os.getenv('EMAIL'))
         self.send_keys(Main_Page_Data.pswd_field,os.getenv("PASSWORD"))
