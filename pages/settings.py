@@ -3,7 +3,7 @@ from ..config.config import Settings_Page,Main_Page_Data,Create_Init_Page
 
 import os
 class check_settings_page(BasePage):
-    load_dotenv()
+    
     def check_settings_add_delete_goal(self):
         self.send_keys(Main_Page_Data.email_field,os.getenv('EMAIL'))
         self.send_keys(Main_Page_Data.pswd_field,os.getenv("PASSWORD"))
