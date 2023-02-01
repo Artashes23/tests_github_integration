@@ -21,7 +21,7 @@ class Test_Create_Delete_Init(Check_Create_Init):
 
     def test_create_init_without_description(self,setup):
         self.browser = setup
-        self.browser.get(os.getenv('PROD_URL'))
+        self.browser.get('https://empower.questionpro.com/')
         self.check_create_init_without_description()
 
     
