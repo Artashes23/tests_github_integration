@@ -1,5 +1,5 @@
-from a.tests_github_integration.tests_github_integration.pages.base_page import BasePage
-from config.config import Main_Page_Data,Create_Init_Page,Inside_Initiative_Page,Ideation_Data
+from ..pages.base_page import BasePage
+from ..config.config import Main_Page_Data,Create_Init_Page,Inside_Initiative_Page,Ideation_Data
 from dotenv import load_dotenv
 import os
 from time import sleep
