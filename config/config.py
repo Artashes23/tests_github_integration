@@ -11,7 +11,7 @@ def randPswd(chars = string.ascii_uppercase + string.digits, N=10):
 	return  ''.join(random.choice(chars))
 
 class Main_Page_Data():
-    new_initiative_btn = (By.XPATH,"//div[@class = 'round-button homepage-button']")
+    new_initiative_btn = (By.XPATH,"//button[text()=' New Initiative']")
     new_category_btn = (By.XPATH,"//div[@class = 'initiatives-wrapper--navbar']/div/div/div[3]")
     active_category_btn = (By.XPATH,"//div[@class = 'initiatives-wrapper--navbar']/div/div/div[4]")
     completed_category_btn = (By.XPATH,"//div[@class = 'initiatives-wrapper--navbar']/div/div/div[5]")
