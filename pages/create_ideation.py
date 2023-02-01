@@ -9,8 +9,8 @@ class Check_Ideations(BasePage):
     
     def check_create_delete(self):
         logo_path = (r"C:\Users\Artashes\Downloads\for_test_.png")
-        self.send_keys(Main_Page_Data.email_field,os.getenv('EMAIL'))
-        self.send_keys(Main_Page_Data.pswd_field,os.getenv("PASSWORD"))
+        self.send_keys(Main_Page_Data.email_field,'artashes.badalyan.999+outerloop@gmail.com')
+        self.send_keys(Main_Page_Data.pswd_field,'lktinereq')
         self.click(Main_Page_Data.login_btn)
         self.click(Main_Page_Data.new_initiative_btn)
         self.click(Main_Page_Data.create_new_custom_initiative)
