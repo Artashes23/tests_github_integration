@@ -1,5 +1,5 @@
 from ..pages.create_ideation import Check_Ideations
-from ..config.config import Main_Page_Data
+
 
 import os
 
