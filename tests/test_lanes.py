@@ -1,8 +1,6 @@
-from pages.lanes import check_initiative_lanes
-import dotenv
-from dotenv import load_dotenv
+from ..pages.lanes import check_initiative_lanes
 import os
-from simple_settings import settings
+
 
 class Test_Lanes(check_initiative_lanes):
     load_dotenv()
