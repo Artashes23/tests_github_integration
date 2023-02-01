@@ -11,6 +11,7 @@ def randPswd(chars = string.ascii_uppercase + string.digits, N=10):
 	return  ''.join(random.choice(chars))
 
 class Main_Page_Data():
+	url = 'https://empower.questionpro.com/'
     new_initiative_btn = (By.XPATH,"//button[@class = 'qp-button initiative-tab-container-button big-btn']")
     new_category_btn = (By.XPATH,"//div[@class = 'initiatives-wrapper--navbar']/div/div/div[3]")
     active_category_btn = (By.XPATH,"//div[@class = 'initiatives-wrapper--navbar']/div/div/div[4]")
