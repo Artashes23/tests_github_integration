@@ -1,12 +1,12 @@
 from ..pages.base_page import BasePage
 from ..config.config import Main_Page_Data,Create_Init_Page,Inside_Initiative_Page,Ideation_Data
-from dotenv import load_dotenv
+
 import os
 from time import sleep
 from selenium.webdriver.common.keys import Keys
 
 class Check_Ideations(BasePage):
-    load_dotenv()
+    
     def check_create_delete(self):
         logo_path = (r"C:\Users\Artashes\Downloads\for_test_.png")
         self.send_keys(Main_Page_Data.email_field,os.getenv('EMAIL'))
