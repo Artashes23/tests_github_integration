@@ -51,18 +51,23 @@ class Check_Create_Init(BasePage):
         self.send_keys(Main_Page_Data.email_field,"artashes.badalyan.999@gmail.com")
         self.send_keys(Main_Page_Data.pswd_field,"lktinereq")
         self.click(Main_Page_Data.login_btn)
+        self.click(Settings_Page.settings_category_btn)
+        self.click(Settings_Page.goals_category)
+        self.send_keys(Settings_Page.goals_name_field,"TC_5")
+        self.click(Settings_Page.goals_plus_btn)
+        sleep(2)
+        self.click(Main_Page_Data.home_btn)
         self.click(Main_Page_Data.new_initiative_btn)
         self.click(Main_Page_Data.create_new_custom_initiative)
-        self.send_keys(Create_Init_Page.initiative_title,"TC_2")
         self.click(Create_Init_Page.pick_a_goal_drop)
-        self.click(Create_Init_Page.pick_a_goal_first_option)
-        self.click(Create_Init_Page.select_owner_field)
-        self.click(Create_Init_Page.select_owner_first_option)
-        self.click(Create_Init_Page.select_contributor)
-        self.click(Create_Init_Page.select_contributor_first_option)
-        self.click(Create_Init_Page.create_btn)
-        validation_error = self.find_text(Ideation_Data.validation_error_desc)
-        assert validation_error == 'Description is required', 'Wrong validation error'
+        matched_goal = self.find_text(Create_Init_Page.pick_a_goal_first_option)
+        self.click(Create_Init_Page.initiative_back_btn)
+        self.click(Settings_Page.settings_category_btn)
+        self.click(Settings_Page.goals_category)
+        self.click(Settings_Page.goal_delete_drop)
+        self.click(Settings_Page.delete_goal)
+        self.click(Main_Page_Data.confirm_btn_popup)
+        assert 'TC_5' == matched_goal, 'bug'
 
     
 
