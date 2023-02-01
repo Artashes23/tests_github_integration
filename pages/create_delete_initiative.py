@@ -5,7 +5,7 @@ from ..config.config import  Create_Init_Page,Main_Page_Data,Ideation_Data
 
 import os
 class Check_Create_Init(BasePage):
-    load_dotenv()
+    
     def check_create_delete(self):
         self.send_keys(Main_Page_Data.email_field,os.getenv('EMAIL'))
         self.send_keys(Main_Page_Data.pswd_field,os.getenv("PASSWORD"))
