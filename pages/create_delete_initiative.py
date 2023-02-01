@@ -48,8 +48,8 @@ class Check_Create_Init(BasePage):
         assert validation_error == 'Name is required', 'Wrong validation error'
         
     def check_create_init_without_description(self):
-        self.send_keys(Main_Page_Data.email_field,os.getenv('EMAIL'))
-        self.send_keys(Main_Page_Data.pswd_field,os.getenv("PASSWORD"))
+        self.send_keys(Main_Page_Data.email_field,"artashes.badalyan.999@gmail.com")
+        self.send_keys(Main_Page_Data.pswd_field,"lktinereq")
         self.click(Main_Page_Data.login_btn)
         self.click(Main_Page_Data.new_initiative_btn)
         self.click(Main_Page_Data.create_new_custom_initiative)
