@@ -1,0 +1,181 @@
+[ {
+  "uid" : "c7740ddaffc0e364",
+  "name" : "test_url_redirecting",
+  "time" : {
+    "start" : 1674737240462,
+    "stop" : 1674737242257,
+    "duration" : 1795
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5b392950edd25320",
+  "name" : "test_delete_file_TC_15",
+  "time" : {
+    "start" : 1674737190579,
+    "stop" : 1674737213586,
+    "duration" : 23007
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "be3f39712fda9e58",
+  "name" : "test_disable_enable_TC_16",
+  "time" : {
+    "start" : 1674736981554,
+    "stop" : 1674737017771,
+    "duration" : 36217
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4c5db7e8fa4fc04c",
+  "name" : "test_create_initiative_without_waiting_root_cause_TC_26",
+  "time" : {
+    "start" : 1674737631867,
+    "stop" : 1674737631867,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "f21bb67f8f172c0d",
+  "name" : "test_empty_root_causes_TC_3",
+  "time" : {
+    "start" : 1674737320392,
+    "stop" : 1674737342412,
+    "duration" : 22020
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8356213c58319b2c",
+  "name" : "test_root_causes_TC_2",
+  "time" : {
+    "start" : 1674737281676,
+    "stop" : 1674737308252,
+    "duration" : 26576
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3335ed3c9b95b2df",
+  "name" : "test_browse_file_TC_14",
+  "time" : {
+    "start" : 1674737153608,
+    "stop" : 1674737178620,
+    "duration" : 25012
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "28fe13eb484b44e7",
+  "name" : "test_create_init_from_Backlog_TC_8",
+  "time" : {
+    "start" : 1674737091917,
+    "stop" : 1674737109127,
+    "duration" : 17210
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "feb4d5363538f068",
+  "name" : "test_init_create_without_titl_TC_11",
+  "time" : {
+    "start" : 1674737609167,
+    "stop" : 1674737629718,
+    "duration" : 20551
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2eb1d68d57386ce0",
+  "name" : "test_token_existence",
+  "time" : {
+    "start" : 1674737225082,
+    "stop" : 1674737228808,
+    "duration" : 3726
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4bc35e0958d95776",
+  "name" : "test_create_initiative_TC_1",
+  "time" : {
+    "start" : 1674737254056,
+    "stop" : 1674737269236,
+    "duration" : 15180
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c7cb262b7a81d293",
+  "name" : "test_initatives_lane_updates_TC_6",
+  "time" : {
+    "start" : 1674737432499,
+    "stop" : 1674737452506,
+    "duration" : 20007
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "84fc2961f5ccc150",
+  "name" : "test_dashboard_user_roles_count_TC_7",
+  "time" : {
+    "start" : 1674737464073,
+    "stop" : 1674737476400,
+    "duration" : 12327
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "30c4b8c5790f6a98",
+  "name" : "test_initative_counts_TC_5",
+  "time" : {
+    "start" : 1674737388794,
+    "stop" : 1674737420940,
+    "duration" : 32146
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "98de7d8abcd2482",
+  "name" : "test_like_counts_TC_19",
+  "time" : {
+    "start" : 1674737121281,
+    "stop" : 1674737140783,
+    "duration" : 19502
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b37dffe06d27fdb1",
+  "name" : "test_initiatives_people_TC_9",
+  "time" : {
+    "start" : 1674737488889,
+    "stop" : 1674737597833,
+    "duration" : 108944
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "ca7778d21730812f",
+  "name" : "test_teams_in_huddles_TC_4",
+  "time" : {
+    "start" : 1674737354448,
+    "stop" : 1674737376616,
+    "duration" : 22168
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "79b5a6378ab8c888",
+  "name" : "test_separate_field_TC_17",
+  "time" : {
+    "start" : 1674737028834,
+    "stop" : 1674737079848,
+    "duration" : 51014
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

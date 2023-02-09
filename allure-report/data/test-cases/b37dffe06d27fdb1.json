@@ -1,0 +1,91 @@
+{
+  "uid" : "b37dffe06d27fdb1",
+  "name" : "test_initiatives_people_TC_9",
+  "fullName" : "tests.test_initiatives_ui.Test_Main#test_initiatives_people_TC_9",
+  "historyId" : "bc0349248092de9569499100f1b19670",
+  "time" : {
+    "start" : 1674737488889,
+    "stop" : 1674737597833,
+    "duration" : 108944
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\t(No symbol) [0x00D86643]\n\t(No symbol) [0x00D1BE21]\n\t(No symbol) [0x00C1DA9D]\n\t(No symbol) [0x00C51342]\n\t(No symbol) [0x00C5147B]\n\t(No symbol) [0x00C88DC2]\n\t(No symbol) [0x00C6FDC4]\n\t(No symbol) [0x00C86B09]\n\t(No symbol) [0x00C6FB76]\n\t(No symbol) [0x00C449C1]\n\t(No symbol) [0x00C45E5D]\n\tGetHandleVerifier [0x00FFA142+2497106]\n\tGetHandleVerifier [0x010285D3+2686691]\n\tGetHandleVerifier [0x0102BB9C+2700460]\n\tGetHandleVerifier [0x00E33B10+635936]\n\t(No symbol) [0x00D24A1F]\n\t(No symbol) [0x00D2A418]\n\t(No symbol) [0x00D2A505]\n\t(No symbol) [0x00D3508B]\n\tBaseThreadInitThunk [0x75A27D69+25]\n\tRtlInitializeExceptionChain [0x775FBB9B+107]\n\tRtlClearBits [0x775FBB1F+191]",
+  "statusTrace" : "self = <tests.test_initiatives_ui.Test_Main object at 0x000002C195A1AED0>\nby_locator = ('xpath', \"//div[@class = 'search-dropdown--container search-dropdown--container-open']/div[1]/div/input\")\n\n    def click(self,by_locator):\n        try:\n    \n>           WebDriverWait(self.browser,40).until((EC.presence_of_element_located(by_locator))).click()\n\npages\\Base_Page.py:35: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"78450f0613763a9679fc056eb0b7a58e\")>\nmethod = <function presence_of_element_located.<locals>._predicate at 0x000002C19D865080>, message = ''\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message: \nE       Stacktrace:\nE       Backtrace:\nE       \t(No symbol) [0x00D86643]\nE       \t(No symbol) [0x00D1BE21]\nE       \t(No symbol) [0x00C1DA9D]\nE       \t(No symbol) [0x00C51342]\nE       \t(No symbol) [0x00C5147B]\nE       \t(No symbol) [0x00C88DC2]\nE       \t(No symbol) [0x00C6FDC4]\nE       \t(No symbol) [0x00C86B09]\nE       \t(No symbol) [0x00C6FB76]\nE       \t(No symbol) [0x00C449C1]\nE       \t(No symbol) [0x00C45E5D]\nE       \tGetHandleVerifier [0x00FFA142+2497106]\nE       \tGetHandleVerifier [0x010285D3+2686691]\nE       \tGetHandleVerifier [0x0102BB9C+2700460]\nE       \tGetHandleVerifier [0x00E33B10+635936]\nE       \t(No symbol) [0x00D24A1F]\nE       \t(No symbol) [0x00D2A418]\nE       \t(No symbol) [0x00D2A505]\nE       \t(No symbol) [0x00D3508B]\nE       \tBaseThreadInitThunk [0x75A27D69+25]\nE       \tRtlInitializeExceptionChain [0x775FBB9B+107]\nE       \tRtlClearBits [0x775FBB1F+191]\n\n..\\..\\..\\..\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py:95: TimeoutException\n\nDuring handling of the above exception, another exception occurred:\n\nself = <tests.test_initiatives_ui.Test_Main object at 0x000002C195A1AED0>, setup = <seleniumwire.webdriver.Chrome (session=\"78450f0613763a9679fc056eb0b7a58e\")>\n\n    def test_initiatives_people_TC_9(self,setup):\n        self.browser = setup\n        self.browser.get(Data.starting_url)\n>       self.check_people_types_of_initiative()\n\ntests\\test_initiatives_ui.py:57: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages\\Initiatives.py:285: in check_people_types_of_initiative\n    self.click(Data.select_first_user)\npages\\Base_Page.py:37: in click\n    WebDriverWait(self.browser,40).until((EC.visibility_of_element_located(by_locator))).click()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"78450f0613763a9679fc056eb0b7a58e\")>\nmethod = <function visibility_of_element_located.<locals>._predicate at 0x000002C19D866160>, message = ''\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message: \nE       Stacktrace:\nE       Backtrace:\nE       \t(No symbol) [0x00D86643]\nE       \t(No symbol) [0x00D1BE21]\nE       \t(No symbol) [0x00C1DA9D]\nE       \t(No symbol) [0x00C51342]\nE       \t(No symbol) [0x00C5147B]\nE       \t(No symbol) [0x00C88DC2]\nE       \t(No symbol) [0x00C6FDC4]\nE       \t(No symbol) [0x00C86B09]\nE       \t(No symbol) [0x00C6FB76]\nE       \t(No symbol) [0x00C449C1]\nE       \t(No symbol) [0x00C45E5D]\nE       \tGetHandleVerifier [0x00FFA142+2497106]\nE       \tGetHandleVerifier [0x010285D3+2686691]\nE       \tGetHandleVerifier [0x0102BB9C+2700460]\nE       \tGetHandleVerifier [0x00E33B10+635936]\nE       \t(No symbol) [0x00D24A1F]\nE       \t(No symbol) [0x00D2A418]\nE       \t(No symbol) [0x00D2A505]\nE       \t(No symbol) [0x00D3508B]\nE       \tBaseThreadInitThunk [0x75A27D69+25]\nE       \tRtlInitializeExceptionChain [0x775FBB9B+107]\nE       \tRtlClearBits [0x775FBB1F+191]\n\n..\\..\\..\\..\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py:95: TimeoutException",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1674737478564,
+      "stop" : 1674737488888,
+      "duration" : 10324
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "setup::0",
+    "time" : {
+      "start" : 1674737597849,
+      "stop" : 1674737600016,
+      "duration" : 2167
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_initiatives_ui"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "Artashes"
+  }, {
+    "name" : "thread",
+    "value" : "12424-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_initiatives_ui"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "b37dffe06d27fdb1.json",
+  "parameterValues" : [ ]
+}

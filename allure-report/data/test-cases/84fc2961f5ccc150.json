@@ -1,0 +1,91 @@
+{
+  "uid" : "84fc2961f5ccc150",
+  "name" : "test_dashboard_user_roles_count_TC_7",
+  "fullName" : "tests.test_initiatives_ui.Test_Main#test_dashboard_user_roles_count_TC_7",
+  "historyId" : "13830e39666394d9d1e427e22e58f6a8",
+  "time" : {
+    "start" : 1674737464073,
+    "stop" : 1674737476400,
+    "duration" : 12327
+  },
+  "status" : "broken",
+  "statusMessage" : "ValueError: invalid literal for int() with base 10: ''",
+  "statusTrace" : "self = <tests.test_initiatives_ui.Test_Main object at 0x000002C195A195D0>, setup = <seleniumwire.webdriver.Chrome (session=\"147e3d694c0c776dd0cc5552f5fd37c2\")>\n\n    def test_dashboard_user_roles_count_TC_7(self,setup):\n        self.browser = setup\n        self.browser.get(Data.starting_url)\n>       self.check_dashboard_user_roles_count()\n\ntests\\test_initiatives_ui.py:52: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <tests.test_initiatives_ui.Test_Main object at 0x000002C195A195D0>\n\n    def check_dashboard_user_roles_count(self):\n        sleep(2)\n        self.send_keys(Data.email_field,Data.email)\n        self.send_keys(Data.pswd_field,Data.password)\n        self.click(Data.login_btn)\n        self.click(Data.feedback_name_btn)\n        self.click(Data.choose_feedback)\n        self.click(Data.dashboard)\n>       owners_bef = int(self.find_text(Data.ponchik_in_owner))\nE       ValueError: invalid literal for int() with base 10: ''\n\npages\\Initiatives.py:219: ValueError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1674737454670,
+      "stop" : 1674737464073,
+      "duration" : 9403
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "setup::0",
+    "time" : {
+      "start" : 1674737476416,
+      "stop" : 1674737478564,
+      "duration" : 2148
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_initiatives_ui"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "Artashes"
+  }, {
+    "name" : "thread",
+    "value" : "12424-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_initiatives_ui"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "84fc2961f5ccc150.json",
+  "parameterValues" : [ ]
+}

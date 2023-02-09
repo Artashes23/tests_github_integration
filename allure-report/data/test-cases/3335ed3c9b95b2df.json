@@ -1,0 +1,115 @@
+{
+  "uid" : "3335ed3c9b95b2df",
+  "name" : "test_browse_file_TC_14",
+  "fullName" : "tests.test_files_ui.Test_files#test_browse_file_TC_14",
+  "historyId" : "3b5f92a4c3b8ebc5da2ea07a52fbed5c",
+  "time" : {
+    "start" : 1674737153608,
+    "stop" : 1674737178620,
+    "duration" : 25012
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "browser1",
+    "time" : {
+      "start" : 1674737142969,
+      "stop" : 1674737142969,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "url",
+    "time" : {
+      "start" : 1674737142969,
+      "stop" : 1674737142969,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1674737142969,
+      "stop" : 1674737153608,
+      "duration" : 10639
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "setup::0",
+    "time" : {
+      "start" : 1674737178621,
+      "stop" : 1674737180778,
+      "duration" : 2157
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_files_ui"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_files"
+  }, {
+    "name" : "host",
+    "value" : "Artashes"
+  }, {
+    "name" : "thread",
+    "value" : "12424-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_files_ui"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3335ed3c9b95b2df.json",
+  "parameterValues" : [ ]
+}

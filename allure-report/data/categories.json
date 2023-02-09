@@ -1,0 +1,77 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: Inactives count bug",
+      "children" : [ {
+        "name" : "test_initative_counts_TC_5",
+        "uid" : "30c4b8c5790f6a98",
+        "parentUid" : "6a361c0ff0b5865dc77476ded277cbad",
+        "status" : "failed",
+        "time" : {
+          "start" : 1674737388794,
+          "stop" : 1674737420940,
+          "duration" : 32146
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6a361c0ff0b5865dc77476ded277cbad"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "ValueError: invalid literal for int() with base 10: ''",
+      "children" : [ {
+        "name" : "test_dashboard_user_roles_count_TC_7",
+        "uid" : "84fc2961f5ccc150",
+        "parentUid" : "b52d132af57373bf7983d639a9504a27",
+        "status" : "broken",
+        "time" : {
+          "start" : 1674737464073,
+          "stop" : 1674737476400,
+          "duration" : 12327
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b52d132af57373bf7983d639a9504a27"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\t(No symbol) [0x00D86643]\n\t(No symbol) [0x00D1BE21]\n\t(No symbol) [0x00C1DA9D]\n\t(No symbol) [0x00C51342]\n\t(No symbol) [0x00C5147B]\n\t(No symbol) [0x00C88DC2]\n\t(No symbol) [0x00C6FDC4]\n\t(No symbol) [0x00C86B09]\n\t(No symbol) [0x00C6FB76]\n\t(No symbol) [0x00C449C1]\n\t(No symbol) [0x00C45E5D]\n\tGetHandleVerifier [0x00FFA142+2497106]\n\tGetHandleVerifier [0x010285D3+2686691]\n\tGetHandleVerifier [0x0102BB9C+2700460]\n\tGetHandleVerifier [0x00E33B10+635936]\n\t(No symbol) [0x00D24A1F]\n\t(No symbol) [0x00D2A418]\n\t(No symbol) [0x00D2A505]\n\t(No symbol) [0x00D3508B]\n\tBaseThreadInitThunk [0x75A27D69+25]\n\tRtlInitializeExceptionChain [0x775FBB9B+107]\n\tRtlClearBits [0x775FBB1F+191]",
+      "children" : [ {
+        "name" : "test_initiatives_people_TC_9",
+        "uid" : "b37dffe06d27fdb1",
+        "parentUid" : "b54af21fcd6ba0aff44a7ad1da411a2c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1674737488889,
+          "stop" : 1674737597833,
+          "duration" : 108944
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b54af21fcd6ba0aff44a7ad1da411a2c"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: failed to change window state to 'normal', current state is 'maximized'\n  (Session info: chrome=109.0.5414.76)\nStacktrace:\nBacktrace:\n\t(No symbol) [0x00D86643]\n\t(No symbol) [0x00D1BE21]\n\t(No symbol) [0x00C1DA9D]\n\t(No symbol) [0x00C03995]\n\t(No symbol) [0x00C023D3]\n\t(No symbol) [0x00C00C35]\n\t(No symbol) [0x00C98CBF]\n\t(No symbol) [0x00C6FD7C]\n\t(No symbol) [0x00C86B09]\n\t(No symbol) [0x00C6FB76]\n\t(No symbol) [0x00C449C1]\n\t(No symbol) [0x00C45E5D]\n\tGetHandleVerifier [0x00FFA142+2497106]\n\tGetHandleVerifier [0x010285D3+2686691]\n\tGetHandleVerifier [0x0102BB9C+2700460]\n\tGetHandleVerifier [0x00E33B10+635936]\n\t(No symbol) [0x00D24A1F]\n\t(No symbol) [0x00D2A418]\n\t(No symbol) [0x00D2A505]\n\t(No symbol) [0x00D3508B]\n\tBaseThreadInitThunk [0x75A27D69+25]\n\tRtlInitializeExceptionChain [0x775FBB9B+107]\n\tRtlClearBits [0x775FBB1F+191]",
+      "children" : [ {
+        "name" : "test_create_initiative_without_waiting_root_cause_TC_26",
+        "uid" : "4c5db7e8fa4fc04c",
+        "parentUid" : "8bbc1e79102b649de4ce384f32f763d6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1674737631867,
+          "stop" : 1674737631867,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8bbc1e79102b649de4ce384f32f763d6"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}
