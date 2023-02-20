@@ -1,7 +1,10 @@
 name: Python application tests
 
-on: [push]
-
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: '8,28,48 * * * *'
 jobs:
   build:
     runs-on: windows-latest
