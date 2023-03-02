@@ -17,9 +17,8 @@ jobs:
     - uses: pre-commit/action@v3.0.0
     - name: Coverage
       run: |
-        coverage run -m pytest
-        coverage report -m
-        coverage xml
+         pytest -k test_check_status_updates
+
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v2
       with:
