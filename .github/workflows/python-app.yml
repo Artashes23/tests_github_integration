@@ -1,7 +1,9 @@
 name: pre-commit
 on:
-  pull_request:
-    branches: [main]
+  push:
+  workflow_dispatch:
+  schedule:
+  - cron: '8,28,48 * * * *'
 jobs:
   pre-commit:
     runs-on: ubuntu-latest
