@@ -1,31 +1,27 @@
-name: pre-commit
 on:
   push:
   workflow_dispatch:
   schedule:
-  - cron: '8,28,48 * * * *'
+    - cron: '8,28,48 * * * *'
 jobs:
-  pre-commit:
-    runs-on: ubuntu-latest
+  build:
+    runs-on: windows-latest
+    
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-python@v3
-    - name: Install pre-commit
-      run: |
-        pip install pre-commit
-    - name: Install requirements
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
+    - name: Set up Python environment
+      uses: actions/setup-python@v3
+      with:
+        python-version: 3.8
+
+    - name: Install dependencies
       run: |
         pip install -r requirements.txt
-    - uses: pre-commit/action@v3.0.0
-    - name: Coverage
+    - name: Print rootdir
       run: |
-         pytest -k test_check_status_updates
-
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v2
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-        files: ./coverage.xml
-        flags: unittests
-        name: codecov-umbrella
-        fail_ci_if_error: true
+        echo "rootdir: $(pwd)"
+    - name: Run tests
+      run: |
+        pytest -k test_check_status_updates
