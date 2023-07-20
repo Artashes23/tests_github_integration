@@ -24,4 +24,4 @@ jobs:
         echo "rootdir: $(pwd)"
     - name: Run tests
       run: |
-        pytest -k test_check_status_updates
+        pytest -k test_create_delete_init
