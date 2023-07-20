@@ -1,0 +1,31 @@
+
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: '8,28,48 * * * *'
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
+    - name: Set up Python environment
+      uses: actions/setup-python@v3
+      with:
+        python-version: 3.8
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+    - name: Print rootdir
+      run: |
+        echo "rootdir: $(pwd)"
+    - name: Run tests
+      run: |
+        pytest -k test_create_delete_init
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - name: Test with pytest
+      run: |
+        pytest
