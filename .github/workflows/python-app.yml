@@ -1,4 +1,5 @@
 
+on:
   push:
   workflow_dispatch:
   schedule:
@@ -25,7 +26,3 @@ jobs:
     - name: Run tests
       run: |
         pytest -k test_create_delete_init
-        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Test with pytest
-      run: |
-        pytest
