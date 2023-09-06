@@ -11,7 +11,12 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    
+    - name: Use a Secret in the Workflow
+      env:
+          URL: ${{ secrets.URL }}
+      run: |
+          echo "My URL is $URL"
+          
     - name: Set up Python environment
       uses: actions/setup-python@v3
       with:
