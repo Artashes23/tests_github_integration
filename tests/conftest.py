@@ -28,7 +28,7 @@ def setup():
     chrome_options.add_argument("--capture=no")
     chrome_options.add_argument("--log-level=3")
     chrome_options.add_argument("--start-maximized")
-    browser = webdriver.Chrome(executable_path=ChromeDriverManager().install(),options = chrome_options)
+    browser = webdriver.Chrome(options = chrome_options)
     yield browser
     browser.quit()
 
